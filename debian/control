@@ -1,0 +1,12 @@
+Source: ros-kinetic-tf-remapper-cpp
+Section: misc
+Priority: extra
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-roscpp, ros-kinetic-rostest, ros-kinetic-tf, ros-kinetic-tf2-msgs, ros-kinetic-xmlrpcpp
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-tf-remapper-cpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-roscpp, ros-kinetic-tf2-msgs, ros-kinetic-xmlrpcpp
+Description: More efficient version of tf/tf_remap able to handle TFs at kHz with tens of subscribers.
