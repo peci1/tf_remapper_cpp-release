@@ -1,0 +1,12 @@
+Source: ros-noetic-tf-remapper-cpp
+Section: misc
+Priority: optional
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-roscpp, ros-noetic-rostest <!nocheck>, ros-noetic-tf <!nocheck>, ros-noetic-tf2-msgs, ros-noetic-xmlrpcpp
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-tf-remapper-cpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-roscpp, ros-noetic-tf2-msgs, ros-noetic-xmlrpcpp
+Description: More efficient version of tf/tf_remap able to handle TFs at kHz with tens of subscribers.
